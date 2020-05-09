@@ -1,8 +1,12 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:foodie/Pages/Catalogs.dart';
+import 'package:foodie/Services/DataStructure.dart';
 import 'package:foodie/Styles/Style.dart';
 
-Widget drawer() {
+Widget drawer(context) {
   return Drawer(
     child: Column(
       mainAxisAlignment: MainAxisAlignment.start,
@@ -24,19 +28,27 @@ Widget drawer() {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             InkWell(
-              onTap: (){},
+
+              onTap: (){
+                setView(Catalog());
+                Navigator.pop(context);
+              },
                           child: ListTile(
                 title: Text('Home'),
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: (){
+                Navigator.pop(context);
+              },
                           child: ListTile(
                 title: Text('Foods'),
               ),
             ),
             InkWell(
-              onTap: (){},
+              onTap: (){
+                Navigator.pop(context);
+              },
                           child: ListTile(
                 title: Text('Shops'),
               ),

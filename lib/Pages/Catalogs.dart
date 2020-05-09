@@ -2,8 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodie/Services/Streams.dart';
 
-Widget catalogsPage() {
-  return Center(
+class Catalog extends StatefulWidget {
+  @override
+  _CatalogState createState() => _CatalogState();
+}
+
+class _CatalogState extends State<Catalog> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
     child: Column(
       children: <Widget>[
         Expanded(
@@ -28,4 +35,5 @@ Widget catalogsPage() {
       ],
     ),
   );
+  }
 }

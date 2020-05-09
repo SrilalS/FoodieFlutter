@@ -24,7 +24,7 @@ class HomeState extends State<Home> {
     setContext(context);
     return Scaffold(
         appBar: appBar(context),
-        drawer: drawer(),
+        drawer: drawer(context),
         //drawer: kIsWeb ? Container():drawer(),
         body: StreamBuilder(
             stream: mainStream.stream.asBroadcastStream(),
