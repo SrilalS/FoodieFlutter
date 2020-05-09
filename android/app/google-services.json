@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "719088442831",
+    "firebase_url": "https://food-39d3a.firebaseio.com",
+    "project_id": "food-39d3a",
+    "storage_bucket": "food-39d3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719088442831:android:25d0b59e4e08a51306c6ba",
+        "android_client_info": {
+          "package_name": "com.srilals.foodie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719088442831-s7n3giopq2pjkoiktdc0bldub9tg37ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_y-oz6XmFNvYpDn8AUYDW_U8tYFbAO2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719088442831-s7n3giopq2pjkoiktdc0bldub9tg37ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

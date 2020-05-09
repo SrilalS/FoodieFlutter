@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodie/Services/Streams.dart';
@@ -11,13 +12,14 @@ class _CatalogState extends State<Catalog> {
   @override
   Widget build(BuildContext context) {
     return Center(
-    child: Column(
-      children: <Widget>[
-        Expanded(
+    child: StreamBuilder(
+      stream: Firestore.instance.collection('FOODS').snapshots(),
+      builder: (context, data){
+        return Expanded(
           flex: 1,
           child: GridView.count(
             crossAxisCount: 4,
-            children: List.generate(50, (index) {
+            children: List.generate(data.data.documents.length, (index) {
               return Container(
                 height: MediaQuery.of(currentBuildContext).size.height,
                 child: Card(
@@ -31,9 +33,8 @@ class _CatalogState extends State<Catalog> {
               );
             }),
           ),
-        ),
-      ],
-    ),
+        );
+    })
   );
   }
 }
