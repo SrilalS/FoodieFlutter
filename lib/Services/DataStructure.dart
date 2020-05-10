@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:foodie/Pages/Catalogs.dart';
 import 'package:foodie/Pages/SignUp.dart';
 import 'package:foodie/Services/Streams.dart';
 
-Widget currentView = SignUp();
+Widget currentView = Catalog();
 void setView(Widget view){
   currentView = view;
   mainStream.sink.add('ViewChange');
